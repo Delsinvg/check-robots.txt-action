@@ -1,0 +1,20 @@
+{
+  "name": "check-robots.txt-action",
+  "version": "1.0.0",
+  "description": "This action checks whether the website has a robots.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Delsinvg/check-robots.txt-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Delsinvg/check-robots.txt-action/issues"
+  },
+  "homepage": "https://github.com/Delsinvg/check-robots.txt-action#readme"
+}

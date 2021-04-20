@@ -1,0 +1,13 @@
+name: 'Check Robots.txt'
+description: 'This action checks whether the website has a robots.txt'
+inputs:
+  site:  # id of input
+    description: 'url of the site to check'
+    required: true
+    default: 'https://codedor.be'
+outputs:
+  robots: # id of output
+    description: 'Link of the Robots.txt'
+runs:
+  using: 'node12'
+  main: 'index.js'
