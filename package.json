@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Delsinvg/check-robots.txt-action/issues"
   },
-  "homepage": "https://github.com/Delsinvg/check-robots.txt-action#readme"
+  "homepage": "https://github.com/Delsinvg/check-robots.txt-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "axios": "^0.21.1"
+  }
 }
