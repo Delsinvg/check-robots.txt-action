@@ -3,7 +3,7 @@ on: [push]
 jobs:
   check_robots.txt_job:
     runs-on: ubuntu-latest
-    name: A job to check the robots.txt of a site
+    name: A job to check the robotstxt of a site
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -15,5 +15,5 @@ jobs:
         with:
           site: 'https://www.odisee.be/'
       # Use the output from the `check` step
-      - name: Get the url of the robots.txt
+      - name: Get the url of the robotstxt
         run: echo "This is the robots.txt ${{ steps.check.outputs.robots }}"
