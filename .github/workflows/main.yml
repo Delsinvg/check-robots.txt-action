@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  check_robots.txt_job:
+  check_robotstxt_job:
     runs-on: ubuntu-latest
     name: A job to check the robotstxt of a site
     steps:
