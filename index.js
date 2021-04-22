@@ -3,15 +3,15 @@ const github = require("@actions/github");
 const axios = require("axios").default;
 
 try {
-    const siteUrl = core.getInput("site");
+    const siteUrl = core.getInput("site") + '/robots.txt';
 
     axios
-    .get(siteUrl + '/robots.txt')
+    .get(siteUrl)
     .then(function (response) {
-        console.log(response)
+        core.setOutput("robots", siteUrl);
     })
     .catch(function (error) {
-      console.log(error);
+        core.setFailed("The website does not have a robots.txt");
     });
 
   } catch (error) {
